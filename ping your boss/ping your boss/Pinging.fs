@@ -40,7 +40,7 @@ let checkHosts hosts =
 
     let results =
         hosts
-        |> Seq.map (ping 4)
+        |> Seq.map (ping 1)
         |> Async.Parallel
         |> Async.RunSynchronously
         |> Seq.toList

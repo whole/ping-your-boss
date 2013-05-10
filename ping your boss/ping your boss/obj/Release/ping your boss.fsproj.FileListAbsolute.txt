@@ -1,0 +1,8 @@
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\bin\Release\ping_your_boss.exe.config
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\bin\Release\ping_your_boss.XML
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\bin\Release\ping_your_boss.exe
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\bin\Release\ping_your_boss.pdb
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\bin\Release\FSharp.Core.dll
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\bin\Release\FSharp.Core.xml
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\obj\Release\ping_your_boss.exe
+C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\obj\Release\ping_your_boss.pdb

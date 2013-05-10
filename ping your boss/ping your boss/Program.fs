@@ -14,7 +14,7 @@ let path = "../hosts.txt"
 let readFromFile() = 
     System.IO.File.ReadAllLines(path);;
 let populateComboBox(savedHosts: string[]) =
-    let cmb = new ComboBox(Size = new Size(100, 16), Dock=DockStyle.Top)     
+    let cmb = new ComboBox(Size = new Size(100, 16), Dock=DockStyle.Left)     
     for i in savedHosts do
         cmb.Items.Add(i) |> ignore
     cmb
@@ -29,7 +29,8 @@ let refreshComboBox(cmb : ComboBox) =
 do Application.EnableVisualStyles()
 
 let cmb = populateComboBox(readFromFile())
-let btnSearch = new Button(Text = "Check your boss", Dock=DockStyle.Top)
+let btnSearch = new Button(Text = "Check your boss", Dock=DockStyle.Right)
+btnSearch.Size = new Size(100, 100) |> ignore
 let checkAllHosts = new Button(Text = "Fetch all computers", Dock=DockStyle.Top)
 
 let alertLabel = new ToolStripLabel(Dock=DockStyle.Right)
@@ -37,9 +38,10 @@ alertLabel.BackColor =System.Drawing.Color.Red |> ignore
 alertLabel.ForeColor =System.Drawing.Color.Red |> ignore
 let toolbarControls = new ToolStrip(Dock=DockStyle.Top)
 
+
 let address = new ToolStripTextBox(Size=new Size(400, 25))
 address.Text <- "enter particular address"
-let label = new Label(Dock=DockStyle.Fill)
+let label = new Label(Dock=DockStyle.Right)
 let toolbar = new ToolStrip(Dock=DockStyle.Top)
 
 let go = new ToolStripButton(DisplayStyle=ToolStripItemDisplayStyle.Text,
@@ -48,7 +50,7 @@ let go = new ToolStripButton(DisplayStyle=ToolStripItemDisplayStyle.Text,
 // Actions 
    (* 1 fetching all hosts *) 
 checkAllHosts.Click.Add(fun arg ->   
-        let parsedString = Pinging.availableHosts(["VATROSLAVS-W7"])
+        let parsedString = Pinging.availableHosts([""])
         System.IO.File.WriteAllLines(path, Pinging.hosts())
         label.Text <- parsedString
         refreshComboBox(cmb)
@@ -57,6 +59,7 @@ checkAllHosts.Click.Add(fun arg ->
      (* 2 clicking go button*) 
 go.Click.Add(fun arg -> label.Text <- Pinging.availableHosts([address.Text]))
 btnSearch.Click.Add(fun arg ->
+         alertLabel.Text <- System.String.Empty
          match cmb.SelectedItem with
              | null -> alertLabel.Text <- "You must select item"
              | _    -> let selected = cmb.SelectedItem.ToString()
@@ -74,17 +77,13 @@ toolbar.Items.Add(address) |> ignore
 toolbar.Items.Add(go)  |>ignore
 toolbarControls.Items.Add(alertLabel)  |>ignore
 
-
-let x = 5
-
-
-
-let form = new Form(Text="Web Browser", Size=new Size(800, 600))
-form.Controls.Add(toolbar)
-form.Controls.Add(label)
+let form = new Form(Text="Web Browser", Size=new Size(300, 300))
+form.Controls.Add(toolbar) |> ignore
 form.Controls.Add(cmb)  |>ignore
 form.Controls.Add(btnSearch)  |>ignore
 form.Controls.Add(checkAllHosts)  |>ignore
+form.Controls.Add(label) |> ignore
+
 
 
 form.Controls.Add(toolbarControls)

@@ -7,3 +7,12 @@ c:\users\vatroslavs\documents\visual studio 2012\Projects\ping your boss\ping yo
 c:\users\vatroslavs\documents\visual studio 2012\Projects\ping your boss\ping your boss\obj\Debug\ping_your_boss.exe
 c:\users\vatroslavs\documents\visual studio 2012\Projects\ping your boss\ping your boss\obj\Debug\ping_your_boss.pdb
 C:\Users\vatroslavs\Documents\Visual Studio 2012\Projects\ping your boss\ping your boss\obj\Debug\ping your boss.fsprojResolveAssemblyReference.cache
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\bin\Debug\ping_your_boss.exe.config
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\bin\Debug\ping_your_boss.XML
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\bin\Debug\ping_your_boss.exe
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\bin\Debug\ping_your_boss.pdb
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\bin\Debug\FSharp.Core.dll
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\bin\Debug\FSharp.Core.xml
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\obj\Debug\ping your boss.fsprojResolveAssemblyReference.cache
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\obj\Debug\ping_your_boss.exe
+C:\Users\vatroslavs\Documents\GitHub\ping-your-boss\ping your boss\ping your boss\obj\Debug\ping_your_boss.pdb
